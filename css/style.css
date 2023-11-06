@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.height0 {
+    height: 0;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.height200 {
+    height: 200px;
+}
+
+.height300 {
+    height: 300px;
+}
+
+.width1200 {
+    width: 1200px;
+}
+
+.ofh {
+    overflow: hidden;
+}
+
+/* layout */
+
+.swiperWrapper {
+    width: 100000px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
