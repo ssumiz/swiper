@@ -70,3 +70,13 @@
     width: 1000px;
     margin: 0 auto;
 }
+
+.swiperSlide {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.on.swiperSlide {
+    opacity: 1;
+    z-index: 10000;
+}

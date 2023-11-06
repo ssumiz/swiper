@@ -1,5 +1,7 @@
 $(document).ready(function () {
     //화면이 준비되면 실행해라.
+
+    // 좌우 슬라이드 기능
     // setInteval animate appendTo pretendTo css
     // setInterval(function(){}, time)
     //$(객체).animate({}, speed, function(){})
@@ -25,19 +27,20 @@ $(document).ready(function () {
     //     }, 3000)
     // })
 
-    const aniw = $(".swiperSlide").width();
 
-    setInterval(function () {
-        $(".swiperWrapper").animate({
-            "marginLeft": -aniw
-        }, 400, function () {
-            $(".swiperSlide").eq(0).appendTo(this)
-            $(this).css("marginLeft", 0)
-        })
-    }, 1000)
+    // 페이드 아웃 효과
 
+    let count = 0;
 
+    setInterval(fadeAni, 3000);
 
+    
+
+    function fadeAni() {
+        count++;
+        count = count % 3;
+        $(".swiperSlide").eq(count).addClass("on").siblings().removeClass("on")
+    }
 
 
 })
